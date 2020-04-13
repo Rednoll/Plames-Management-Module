@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.spring.config;
+package enterprises.inwaiders.plames.modules.management.spring.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import com.inwaiders.plames.modules.management.domain.manager.security.service.ManagerDetailsService;
+import enterprises.inwaiders.plames.modules.management.domain.manager.security.service.ManagerDetailsService;
 
 @Configuration
 @EnableWebSecurity

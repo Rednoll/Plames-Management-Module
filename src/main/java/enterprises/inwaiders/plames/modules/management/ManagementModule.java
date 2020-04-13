@@ -1,11 +1,11 @@
-package com.inwaiders.plames.modules.management;
+package enterprises.inwaiders.plames.modules.management;
 
 import java.util.List;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.inwaiders.plames.domain.module.impl.ModuleBase;
-import com.inwaiders.plames.modules.management.domain.manager.impl.ManagerImpl;
+import enterprises.inwaiders.plames.domain.module.impl.ModuleBase;
+import enterprises.inwaiders.plames.modules.management.domain.manager.impl.ManagerImpl;
 
 public class ManagementModule extends ModuleBase {
 

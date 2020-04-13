@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.domain.manager.security.service;
+package enterprises.inwaiders.plames.modules.management.domain.manager.security.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.inwaiders.plames.modules.management.domain.manager.Manager;
-import com.inwaiders.plames.modules.management.domain.manager.impl.ManagerImpl;
+import enterprises.inwaiders.plames.modules.management.domain.manager.Manager;
+import enterprises.inwaiders.plames.modules.management.domain.manager.impl.ManagerImpl;
 
 @Service
 @Transactional

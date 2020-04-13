@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.domain.manager.impl;
+package enterprises.inwaiders.plames.modules.management.domain.manager.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +15,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.inwaiders.plames.modules.management.dao.manager.ManagerRepository;
-import com.inwaiders.plames.modules.management.domain.manager.Manager;
+import enterprises.inwaiders.plames.modules.management.dao.manager.ManagerRepository;
+import enterprises.inwaiders.plames.modules.management.domain.manager.Manager;
 
 @Entity(name = "Manager")
 @Table(name = "Management_Manager")

@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.web.security.ajax;
+package enterprises.inwaiders.plames.modules.management.web.security.ajax;
 
 import javax.servlet.http.HttpServletRequest;
 

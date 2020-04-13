@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.dao.manager;
+package enterprises.inwaiders.plames.modules.management.dao.manager;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.QueryHints;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.inwaiders.plames.modules.management.domain.manager.impl.ManagerImpl;
+import enterprises.inwaiders.plames.modules.management.domain.manager.impl.ManagerImpl;
 
 @Repository
 public interface ManagerRepository extends JpaRepository<ManagerImpl, Long>{

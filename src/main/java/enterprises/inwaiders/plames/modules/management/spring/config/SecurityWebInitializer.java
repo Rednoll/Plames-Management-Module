@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.spring.config;
+package enterprises.inwaiders.plames.modules.management.spring.config;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

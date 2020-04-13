@@ -1,4 +1,4 @@
-package com.inwaiders.plames.modules.management.domain.manager;
+package enterprises.inwaiders.plames.modules.management.domain.manager;
 
 import java.util.List;
 
