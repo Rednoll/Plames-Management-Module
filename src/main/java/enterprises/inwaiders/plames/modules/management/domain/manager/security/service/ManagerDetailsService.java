@@ -23,8 +23,6 @@ public class ManagerDetailsService implements UserDetailsService{
 			throw new UsernameNotFoundException("User with login: "+username+" not found!");
 		}
 		
-		System.out.println("OK! Manager");
-		
 		return manager.getUserDetails();
 	}
 }
