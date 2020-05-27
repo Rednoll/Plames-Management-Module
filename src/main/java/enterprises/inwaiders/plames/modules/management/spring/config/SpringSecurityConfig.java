@@ -36,8 +36,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		http	
 			.csrf().disable();
 		
+		
 		http
-			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.ALWAYS);
+			.sessionManagement()
+			.sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
+			.sessionFixation().none();
 		
 		http
 			.authorizeRequests()

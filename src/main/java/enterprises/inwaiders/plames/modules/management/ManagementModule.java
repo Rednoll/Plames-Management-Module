@@ -1,5 +1,6 @@
 package enterprises.inwaiders.plames.modules.management;
 
+import java.io.File;
 import java.util.List;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -18,13 +19,27 @@ public class ManagementModule extends ModuleBase {
 	
 		if(managers.isEmpty()) {
 			
-			ManagerImpl manager = ManagerImpl.create();
-			
-				manager.setLogin("admin");
-				manager.setPassHash(new BCryptPasswordEncoder().encode("admin"));
-				
-			manager.save();
+			initAdminUser();
 		}
+	}
+	
+	private void initAdminUser() {
+		
+		
+		ManagerImpl manager = ManagerImpl.create();
+		
+		File mainProps = new File("main.properties");
+		
+		if(mainProps.exists()) {
+			
+		}
+		else {
+			
+			manager.setLogin("admin");
+			manager.setPassHash(new BCryptPasswordEncoder().encode("admin"));
+		}
+		
+		manager.save();
 	}
 
 	@Override
