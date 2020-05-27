@@ -36,10 +36,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		http	
 			.csrf().disable();
 		
-		
 		http
 			.sessionManagement()
-			.sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
 			.sessionFixation().none();
 		
 		http
@@ -53,14 +51,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 			.formLogin()
 				.loginPage("/login")
-				.permitAll()
-				.and()
-			.logout()
-				.permitAll();
-		
+				.permitAll();	
 		http
 			.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
 			.logoutSuccessUrl("/login").deleteCookies("JSESSIONID")
-			.invalidateHttpSession(true); 
+			.invalidateHttpSession(true)
+			.permitAll();; 
 	}
 }
